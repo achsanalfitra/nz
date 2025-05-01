@@ -53,6 +53,22 @@ Above is the table for standard colours. The App can be built completely using t
 
 Development-wise, the colours can be mapped as `enums`. That ensures all the colours are accessible and not restricted to the blueprint.
 
+#### Light mode extended
+
+The colours described in the (colour section)[### Colour] do not provide enough flexibility for this project. The expansion of the colours is necessary and the colour function first to expand are given in the table below
+
+| Colour | Function | Code |
+| :----  | :---- | :---- |
+| *Colour* | | |
+| Colour | Function | Code |
+| Gold 100 (=Pale gold) | Accent | F6F1EB |
+| Gold 300 | Accent | D9C4AB |
+| Gold 500 | Accent/Secondary | A6855E |
+| Gold 700 | Accent/Main/Background | 775C3D |
+
+The gold colours are mostly used for accents. `Gold 500` has another use as being a "secondary," which includes tags or buttons. The `Gold 700` is a strong colour that contrasts pretty well with the background. It serves for main label colours and component backgrounds. Although, it can be used as an accent on darker backgrounds.
+
+
 
 
 
