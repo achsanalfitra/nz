@@ -59,8 +59,7 @@ The colours described in the (colour section)[### Colour] do not provide enough 
 
 | Colour | Function | Code |
 | :----  | :---- | :---- |
-| *Colour* | | |
-| Colour | Function | Code |
+| *Pale gold* | | |
 | Gold 100 (=Pale gold) | Accent | F6F1EB |
 | Gold 300 | Accent | D9C4AB |
 | Gold 500 | Accent/Secondary | A6855E |
@@ -68,9 +67,17 @@ The colours described in the (colour section)[### Colour] do not provide enough 
 
 The gold colours are mostly used for accents. `Gold 500` has another use as being a "secondary," which includes tags or buttons. The `Gold 700` is a strong colour that contrasts pretty well with the background. It serves for main label colours and component backgrounds. Although, it can be used as an accent on darker backgrounds.
 
+Another important colour to expand is the dark colour. Even when the use case is not clearly divided yet, the expansion given in this table below will help with creating a flexible design.
 
+| Colour | Function | Code |
+| :----  | :---- | :---- |
+| *Dried ink* | | |
+| Ink 300 | Accent | C4C4CA |
+| Ink 500 | Tertiary dark/accent | 97979C |
+| Ink 700 | Secondary dark | 727275 |
+| Ink 900 (=Dried ink) | Primary dark | 2E2E2F |
 
-
+The main dark colour `Ink 900` is the last colour and expanded on its lighter side to produce greys. It should be trivial that the usage of the darkest `Ink` colour is the main contrasting colour. The rest follows hiearchy, being less prominent as the tone gets lighter.
 
 
 ## Components
