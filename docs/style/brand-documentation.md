@@ -88,5 +88,10 @@ Additionally, we also expand our main, positive (electric blue) and negative (el
 | Blue 500 | Secondary/Inactive | 7489FF |
 | Blue 700 (=Electric blue) | Primary | 3654FF |
 | Blue 900  | Primary/variant | 2842D8 |
+| *Electric red* | | |
+| Red 300 | Accent | FFB2B4 |
+| Red 500 | Secondary/Inactive | FF787A |
+| Red 700 (=Electric red) | Primary | D50004 |
+| Red 900  | Primary/variant | AC0003 |
 
 ## Components
