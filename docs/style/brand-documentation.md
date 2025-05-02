@@ -79,5 +79,14 @@ Another important colour to expand is the dark colour. Even when the use case is
 
 The main dark colour `Ink 900` is the last colour and expanded on its lighter side to produce greys. It should be trivial that the usage of the darkest `Ink` colour is the main contrasting colour. The rest follows hiearchy, being less prominent as the tone gets lighter.
 
+Additionally, we also expand our main, positive (electric blue) and negative (electric red) colours. Here's the table:
+
+| Colour | Function | Code |
+| :----  | :---- | :---- |
+| *Electric blue* | | |
+| Blue 300 | Accent | B1BCFF |
+| Blue 500 | Secondary/Inactive | 7489FF |
+| Blue 700 (=Electric blue) | Primary | 3654FF |
+| Blue 900  | Primary/variant | 2842D8 |
 
 ## Components
