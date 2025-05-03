@@ -130,4 +130,8 @@ The border radius can be increased or decreased depending on the widget size. Bi
 
 The border width should be small. For reference, imagine the borders are lines on the newspaper that function as a layout tool. For this reason, this theme sets the border width as 1 px.
 
+#### Margin
+
+As described in the [spacing section](####Spacing), there is only two types of spacing here, `intra-component` and `inter-component`. Grids are not used, and component size is inferred from its elements. This is faster for development and aligns with the blocky, newspaper, philosophy in this theme. An instance of this principle would be that for page margins, it follows the    `inter-component` spacing since they are separating between the screen and the outside of the screen.
+
 ## Components
