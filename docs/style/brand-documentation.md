@@ -94,4 +94,31 @@ Additionally, we also expand our main, positive (electric blue) and negative (el
 | Red 700 (=Electric red) | Primary | D50004 |
 | Red 900  | Primary/variant | AC0003 |
 
+### Layout
+
+#### Spacing
+
+The principle of spacing is:
+
+* Wide across component
+* Tight within component
+
+That helps orgnanize things based on how they are related, mimicking how humans think. This table provides how the spacing distribution looks like:
+
+| Spacing type | value | use case |
+| :----  | :---- | :---- |
+| *Intra-component* | | |
+| Intra 10 | 10 | Minimum button padding, spaces between similar elements |
+| Intra 12 | 12 | Spaces between different elements but similar in category, e.g., tags and progress bar |
+| Intra 14 | 14 | Spaces between different elements, e.g., cards’ titles and functional elements |
+| Intra n |$\text{value of order (n - 1)} + 2$ | further spacing is incremented by 2 |
+| *Inter-component* | | |
+| Inter 24 | 24 | Spaces between blocks of similar components |
+| Inter 32 | 32 | Spaces between blocks of different components |
+| Inter 40 | 40 | Spaces that differentiate sections (if any) |
+| Inter n |$\text{value of order (n - 1)} + 8$ | further spacing is incremented by 8 |
+
+The `intra-component` spacing starts at 10 px, but it could be further reduced as the size of the widget gets smaller. In contrast, the `inter-component` should start at 24 px. The value of the latter spacing should be contrast with the `intra-compponent` spacing.
+
+
 ## Components
