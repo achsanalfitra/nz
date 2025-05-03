@@ -135,3 +135,15 @@ The border width should be small. For reference, imagine the borders are lines o
 As described in the [spacing section](####Spacing), there is only two types of spacing here, `intra-component` and `inter-component`. Grids are not used, and component size is inferred from its elements. This is faster for development and aligns with the blocky, newspaper, philosophy in this theme. An instance of this principle would be that for page margins, it follows the    `inter-component` spacing since they are separating between the screen and the outside of the screen.
 
 ## Components
+
+### Buttons
+
+There are three types of buttons in this theme, but the last one is flexible. The main button uses the main colour, the secondary button uses the accent colour, and the tertiary button is an outlined button with accent colour. The last button's colour can be changed depending on the background: light background accent colour; darker background light colour. Here's a detailed specification of the buttons:
+
+| Button type | Padding | Font | Colour |
+| :----  | :---- | :---- | :---- |
+| Main | Equal padding with 10 px | Montserrat medium, white | Blue 700 (or other main colours), inactive: Blue 500 |
+| Secondary | Equal padding with 10 px | Montserrat regular, white | Gold 700, inactive: Gold 500 |
+| Tertiary | Equal padding with 10 px with 1 px border | Montserrat regular, Gold 700 | Fill: none, Gold 700, inactive: fill: Ink 300, Gold 500. Other colours might apply with similar logic. |
+
+Note: the table above is only for the light mode.
