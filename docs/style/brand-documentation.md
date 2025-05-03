@@ -55,7 +55,7 @@ Development-wise, the colours can be mapped as `enums`. That ensures all the col
 
 #### Light mode extended
 
-The colours described in the (colour section)[### Colour] do not provide enough flexibility for this project. The expansion of the colours is necessary and the colour function first to expand are given in the table below
+The colours described in the [colour section](###Colour) do not provide enough flexibility for this project. The expansion of the colours is necessary and the colour function first to expand are given in the table below
 
 | Colour | Function | Code |
 | :----  | :---- | :---- |
