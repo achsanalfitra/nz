@@ -120,5 +120,14 @@ That helps orgnanize things based on how they are related, mimicking how humans 
 
 The `intra-component` spacing starts at 10 px, but it could be further reduced as the size of the widget gets smaller. In contrast, the `inter-component` should start at 24 px. The value of the latter spacing should be contrast with the `intra-compponent` spacing.
 
+#### Border
+
+The general rule for border radius is that it should not look circular. The radius should only be there to soften the edges.
+
+The standard rule for border radius is now set to 10 px.
+
+The border radius can be increased or decreased depending on the widget size. Bigger widgets do not automatically require a bigger border radius, while smaller widgets often require border radius adjustments.
+
+The border width should be small. For reference, imagine the borders are lines on the newspaper that function as a layout tool. For this reason, this theme sets the border width as 1 px.
 
 ## Components
