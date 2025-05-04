@@ -1,12 +1,19 @@
 import 'package:flutter/material.dart';
 
 class NzThemeData {
-  final NzColourPalette primaryColour;
-  final NzColourPalette secondaryColour;
+  final NzColourPalette background;
+  final NzColourPalette ink;
+  final NzColourPalette accent;
+  final NzColourPalette positive;
+  final NzColourPalette negative;
+
 
   NzThemeData({
-    required this.primaryColour,
-    required this.secondaryColour,
+    required this.background,
+    required this.ink,
+    required this.accent,
+    required this.positive,
+    required this.negative,
   });
 }
 
