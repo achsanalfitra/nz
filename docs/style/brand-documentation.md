@@ -30,20 +30,20 @@ Note: if, in practice, other font types are required, only size and weight shoul
 
 There are two default sets of colour: dark and light. Each only consists of 5 different colours.
 
-| Colour name | Function | Code |
-| :----- | :----- | :----- |
-| *Light mode* |  |  |
-| Paper white | Background | FBFAF7 |
-| Pale gold | Accent | F6F1EB |
-| Electric blue| Main | 3654FF |
-| Electric red | Danger | D50004 |
-| Dried ink | Black | 2E2E2F |
-| *Dark mode* |  |  |
-| Dried ink | Black | 2E2E2F |
-| Carbon | Accent | 605F5E |
-| Navy| Main | 2840C7 |
-| Crimson | Danger | AA0204 |
-| Paper white | Background | FBFAF7 |
+| Colour name | Function | Code | Token |
+| :----- | :----- | :----- | :----- |
+| *Light mode* |  |  | |
+| Paper white | Background | FBFAF7 | background |
+| Pale gold | Accent | F6F1EB | accent |
+| Electric blue| Main | 3654FF | positive |
+| Electric red | Danger | D50004 | negative |
+| Dried ink | Black | 2E2E2F | ink |
+| *Dark mode* |  |  |  |
+| Dried ink | Background | 2E2E2F | background |
+| Carbon | Accent | 605F5E | accent |
+| Navy| Main | 2840C7 | positive |
+| Crimson | Danger | AA0204 | negative |
+| Paper white | White | FBFAF7 | ink |
 
 Above is the table for standard colours. The App can be built completely using those colours. Future colours to be added:
 
@@ -52,6 +52,8 @@ Above is the table for standard colours. The App can be built completely using t
 * Shadow colours: colours for every other colour, consisting of a lighter and darker shade. Each shade is evaluated to paper white and dried ink on 75% opacity.
 
 Development-wise, the colours can be mapped as `enums`. That ensures all the colours are accessible and not restricted to the blueprint.
+
+The tokens on the table above represent how the colours are referred during the development process. For example, the `ink` token, in the context of light mode, refers to all shades of `Dried Ink`
 
 #### Light mode extended
 
