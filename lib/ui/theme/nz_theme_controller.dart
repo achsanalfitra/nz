@@ -7,10 +7,7 @@ class NzThemeController with ChangeNotifier {
 
   NzThemeController({required this.themeName});
 
-  NzThemeData nzThemeData = NzThemeData(
-    primaryColour: Colors.black26,
-    secondaryColour: Colors.black26,
-  );
+  NzThemeData nzThemeData = lightMode;
 
   void changeTheme(String themeName) {
   nzThemeData = NzThemeModel.generate(themeName: themeName);
