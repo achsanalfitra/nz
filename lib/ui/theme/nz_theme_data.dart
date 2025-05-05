@@ -25,10 +25,10 @@ class NzColourPalette {
   final Color? colour900;
 
   NzColourPalette({
-    required this.colour100,
-    required this.colour300,
-    required this.colour500,
-    required this.colour700,
-    required this.colour900,
+    this.colour100,
+    this.colour300,
+    this.colour500,
+    this.colour700,
+    this.colour900,
   });
 }
