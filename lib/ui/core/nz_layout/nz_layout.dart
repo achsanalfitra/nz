@@ -10,10 +10,10 @@ class NzLayout extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Container(
+      width: double.infinity,
+      height: double.infinity,
       color: context.theme().background.colour100,
-      child: Center(
-        child: Padding(padding: EdgeInsets.all(margin), child: child),
-      ),
+      child: Padding(padding: EdgeInsets.all(margin), child: child),
     );
   }
 }
