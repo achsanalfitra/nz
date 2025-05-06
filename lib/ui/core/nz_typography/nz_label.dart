@@ -20,7 +20,7 @@ class NzLabel extends StatelessWidget {
       style: GoogleFonts.montserrat(
         color: fontColor,
         fontSize: fontSize,
-        fontWeight: FontWeight.w700, // bold
+        fontWeight: FontWeight.w500, // medium
         letterSpacing: -0.03,
       ),
     );
