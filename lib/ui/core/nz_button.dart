@@ -57,7 +57,7 @@ class _NzButtonState extends State<NzButton> {
           mainAxisAlignment: MainAxisAlignment.center,
           spacing: 10,
           children: [
-            if(widget.leftChildren != null) ...[...widget.leftChildren!],
+            if(widget.leftChildren != null) ...widget.leftChildren!,
             Text( 
               widget.buttonText,
               style: GoogleFonts.montserrat(
@@ -67,7 +67,7 @@ class _NzButtonState extends State<NzButton> {
                 color: widget.fontColor,
               ),
             ),
-            if(widget.rightChildren != null) ...[...widget.rightChildren!],
+            if(widget.rightChildren != null) ...widget.rightChildren!,
           ],
         ),
       ),
