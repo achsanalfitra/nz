@@ -12,6 +12,8 @@ class NzButton extends StatefulWidget {
   final double padding;
   final double borderWidth;
   final double borderRadius;
+  final List<Widget>? leftChildren;
+  final List<Widget>? rightChildren;
 
   const NzButton({
     this.hasBorder = true,
@@ -24,6 +26,8 @@ class NzButton extends StatefulWidget {
     this.padding = 10,
     this.borderWidth = 1,
     this.borderRadius = 10,
+    this.leftChildren,
+    this.rightChildren,
     super.key,
   });
 
@@ -49,7 +53,8 @@ class _NzButtonState extends State<NzButton> {
         mainAxisAlignment: MainAxisAlignment.center,
         spacing: 10,
         children: [
-          Text(
+          if(widget.leftChildren != null) ...[...widget.leftChildren!],
+          Text( 
             widget.buttonText,
             style: GoogleFonts.montserrat(
               fontSize: widget.fontSize,
@@ -58,6 +63,7 @@ class _NzButtonState extends State<NzButton> {
               color: widget.fontColor,
             ),
           ),
+          if(widget.rightChildren != null) ...[...widget.rightChildren!],
         ],
       ),
     );

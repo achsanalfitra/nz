@@ -21,6 +21,8 @@ class StagingApp extends StatelessWidget {
                   background: theme.positive.colour700!,
                   borderColour: theme.positive.colour700!,
                   fontColor: theme.background.colour100!,
+                  leftChildren: [Text("Test 1"), Text("|")],
+                  rightChildren: [Text("|"), Text("Test 2")],
                 ),
               ),
             );
