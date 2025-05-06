@@ -21,9 +21,9 @@ class NzButton extends StatefulWidget {
     this.fontSize = 24,
     this.fontWeight = FontWeight.w500,
     this.buttonText = 'Button',
-    required this.padding,
+    this.padding = 10,
     this.borderWidth = 1,
-    required this.borderRadius,
+    this.borderRadius = 10,
     super.key,
   });
 
@@ -45,6 +45,7 @@ class _NzButtonState extends State<NzButton> {
         ),
       ),
       child: Row(
+        mainAxisSize: MainAxisSize.min,
         mainAxisAlignment: MainAxisAlignment.center,
         spacing: 10,
         children: [
