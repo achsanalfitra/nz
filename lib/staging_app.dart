@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:nz/ui/core/nz_button_model.dart';
+import 'package:nz/ui/core/nz_button/nz_button_model.dart';
 import 'package:nz/ui/theme/nz_theme_provider.dart';
 import 'package:nz/ui/theme/nz_theme.dart';
 
