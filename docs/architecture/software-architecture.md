@@ -25,3 +25,10 @@ The folder structure in this app follows a clear separation of concerns. It gene
 * utils // helpers
 * routing // manage route allocations
 
+## Feature details
+
+In features, there are three component types:
+
+* static widgets: static renderers. This is for noninteractive, one-time rendered objects, such as labels, text, or pictures.
+* stateful widgets: components that can morph. This morphing allows for smoother animation or component property adjustments. Use this widget type for buttons, cards, tags, or search bar.
+* controllers: regardless of whether the component is static or stateful, the controller is always present if the component requires data transmission. This layer handles the logic concerning persistence and communication.
