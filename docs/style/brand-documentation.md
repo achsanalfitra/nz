@@ -159,3 +159,7 @@ Tags are for marking components with their respective types. For example, in a p
 * Font: label, font size 12 px, colour accent 300 for light mode
 
 The tags are built similar to button, where it can be clickable and can have no text (if icons are preferred).
+
+### Headers
+
+The headers are designed similar to how headers are in newspapers, although not the first-page headers as they are often big. It has `label`-type fonts that are clickable and stacked as rows. Under the row is a line, as wide as the text.
