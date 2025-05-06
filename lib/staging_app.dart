@@ -1,5 +1,8 @@
 import 'package:flutter/material.dart';
-import 'package:nz/ui/core/nz_button/nz_button_model.dart';
+import 'package:nz/ui/core/nz_layout/nz_layout.dart';
+import 'package:nz/ui/core/nz_typography/nz_label.dart';
+import 'package:nz/ui/core/nz_typography/nz_text.dart';
+import 'package:nz/ui/core/nz_typography/nz_title.dart';
 import 'package:nz/ui/theme/nz_theme_provider.dart';
 import 'package:nz/ui/theme/nz_theme.dart';
 
@@ -16,11 +19,29 @@ class StagingApp extends StatelessWidget {
           builder: (context) {
             final theme = context.theme();
             return Scaffold(
-              body: Center(child: NzButtonModel.generate(context, 'secondary')),
+              body: NzLayout(
+                child: Column(
+                  spacing: 14,
+                  children: [
+                    NzLabel(
+                      labelText: 'Testing',
+                      fontColor: theme.ink.colour900!,
+                    ),
+                    NzLabel(
+                      labelText: 'Testing',
+                      fontColor: theme.ink.colour900!,
+                    ),
+                    NzText(
+                      paragraphText: 'Testing',
+                      fontColor: theme.ink.colour900!,
+                    ),
+                  ],
+                ),
+              ),
             );
           },
         ),
       ),
-    ); //insert your app here
+    );
   }
 }

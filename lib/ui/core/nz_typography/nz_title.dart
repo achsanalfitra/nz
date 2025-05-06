@@ -1,12 +1,12 @@
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
 
-class NzLabel extends StatelessWidget {
+class NzTitle extends StatelessWidget {
   final String titleText;
   final double fontSize;
   final Color fontColor;
 
-  const NzLabel({
+  const NzTitle({
     required this.titleText,
     this.fontSize = 48,
     required this.fontColor,
