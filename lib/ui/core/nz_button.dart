@@ -14,6 +14,7 @@ class NzButton extends StatefulWidget {
   final double borderRadius;
   final List<Widget>? leftChildren;
   final List<Widget>? rightChildren;
+  final void Function()? onTap;
 
   const NzButton({
     this.hasBorder = true,
@@ -28,6 +29,7 @@ class NzButton extends StatefulWidget {
     this.borderRadius = 10,
     this.leftChildren,
     this.rightChildren,
+    this.onTap,
     super.key,
   });
 
@@ -38,33 +40,36 @@ class NzButton extends StatefulWidget {
 class _NzButtonState extends State<NzButton> {
   @override
   Widget build(BuildContext context) {
-    return Container(
-      padding: EdgeInsets.all(widget.padding),
-      decoration: BoxDecoration(
-        color: widget.background,
-        borderRadius: BorderRadius.circular(widget.borderRadius),
-        border: Border.all(
-          color: widget.borderColour,
-          width: widget.hasBorder ? widget.borderWidth : 0,
-        ),
-      ),
-      child: Row(
-        mainAxisSize: MainAxisSize.min,
-        mainAxisAlignment: MainAxisAlignment.center,
-        spacing: 10,
-        children: [
-          if(widget.leftChildren != null) ...[...widget.leftChildren!],
-          Text( 
-            widget.buttonText,
-            style: GoogleFonts.montserrat(
-              fontSize: widget.fontSize,
-              fontWeight: widget.fontWeight,
-              letterSpacing: -0.03,
-              color: widget.fontColor,
-            ),
+    return GestureDetector(
+      onTap: widget.onTap?? (){} ,
+      child: Container(
+        padding: EdgeInsets.all(widget.padding),
+        decoration: BoxDecoration(
+          color: widget.background,
+          borderRadius: BorderRadius.circular(widget.borderRadius),
+          border: Border.all(
+            color: widget.borderColour,
+            width: widget.hasBorder ? widget.borderWidth : 0,
           ),
-          if(widget.rightChildren != null) ...[...widget.rightChildren!],
-        ],
+        ),
+        child: Row(
+          mainAxisSize: MainAxisSize.min,
+          mainAxisAlignment: MainAxisAlignment.center,
+          spacing: 10,
+          children: [
+            if(widget.leftChildren != null) ...[...widget.leftChildren!],
+            Text( 
+              widget.buttonText,
+              style: GoogleFonts.montserrat(
+                fontSize: widget.fontSize,
+                fontWeight: widget.fontWeight,
+                letterSpacing: -0.03,
+                color: widget.fontColor,
+              ),
+            ),
+            if(widget.rightChildren != null) ...[...widget.rightChildren!],
+          ],
+        ),
       ),
     );
   }
