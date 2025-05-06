@@ -163,3 +163,29 @@ The tags are built similar to button, where it can be clickable and can have no 
 ### Headers
 
 The headers are designed similar to how headers are in newspapers, although not the first-page headers as they are often big. It has `label`-type fonts that are clickable and stacked as rows. Under the row is a line, as wide as the text.
+
+### Forms
+
+The forms have two components: the field title and the form field. The visual follows modern newspaper forms which utilize square borders. Although seems stiff, there is a modern touch that makes the fields have less contrast tone, making them not distracting.
+
+There are many field types:
+
+* single-line text field
+* multiple line text field
+* email text field
+* obscured text field (password)
+* dropdown field
+* selector field (such as, date or colour picker)
+* and, so forth.
+
+Despite the field types variety, they share the same style.
+
+Field title:
+* Font: label, one step larger than the field text, `Ink 900`-coloured (the most prominent colour given theme)
+
+Form field:
+* Font: paragraph, one step lower than title defaulted on 12 px, `Ink 700` coloured. Selected text is on `Ink 900`.
+* Border: very thin, 1 px for default matching the text width, coloured the same as placeholder text.
+* Layout: for fields that require actions, there is an indicator icon that should be on the rightmost of the field. It is separated with the rest of the field by a pipe symbol to the left, which is spaced at least 12 px.
+
+
