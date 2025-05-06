@@ -149,3 +149,13 @@ There are three types of buttons in this theme, but the last one is flexible. Th
 | Tertiary | Equal padding with 10 px with 1 px border | Montserrat regular, Gold 700 | Fill: none, Gold 700, inactive: fill: Ink 300, Gold 500. Other colours might apply with similar logic. |
 
 Note: the table above is only for the light mode.
+
+### Tags
+
+Tags are for marking components with their respective types. For example, in a project card, the tag provides visual que on the project status. The specification is as follows:
+
+* Padding: equal 10 px
+* Background: Ink 900 for light mode
+* Font: label, font size 12 px, colour accent 300 for light mode
+
+The tags are built similar to button, where it can be clickable and can have no text (if icons are preferred).
