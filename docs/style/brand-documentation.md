@@ -147,6 +147,10 @@ The icons should be tight, sharp, and minimalist. The icon size should be compar
 * Dashboard
 * Todo
 
+Here's an example of the icon style developed:
+
+![Todo icon](../../assets/example_assets/todo-example-png.png)
+
 ## Components
 
 ### Buttons
