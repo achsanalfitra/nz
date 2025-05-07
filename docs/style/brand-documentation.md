@@ -136,6 +136,17 @@ The border width should be small. For reference, imagine the borders are lines o
 
 As described in the [spacing section](####Spacing), there is only two types of spacing here, `intra-component` and `inter-component`. Grids are not used, and component size is inferred from its elements. This is faster for development and aligns with the blocky, newspaper, philosophy in this theme. An instance of this principle would be that for page margins, it follows the    `inter-component` spacing since they are separating between the screen and the outside of the screen.
 
+### Icons
+
+The icons should be tight, sharp, and minimalist. The icon size should be comparable to the `label` text. Design-wise, the size should be matched to the 24 px `montserrat` on medium weight. There is a Figma file to refer on this for expanding the icon resources. For now, here is the already developed icons list:
+
+* Plus
+* Check
+* X
+* Chevrons (all direction)
+* Dashboard
+* Todo
+
 ## Components
 
 ### Buttons
