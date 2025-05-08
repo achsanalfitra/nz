@@ -165,6 +165,14 @@ There are three types of buttons in this theme, but the last one is flexible. Th
 
 Note: the table above is only for the light mode.
 
+#### Text buttons
+
+Text buttons are clickable texts. The analog of this in newspaper would be the bolded directives. The design borrows the same principle. For this button type, the active state does not have a fill and the text should be noticeably prominent. On disabled, the button should follow the tertiary (ghost) button in this theme, which is filled with a less contrast background. Here's the spec for light mode:
+
+| Button type | Padding | Font | Colour |
+| :----  | :---- | :---- | :---- |
+| Text | Equal padding with 4 px (taking less space than actual buttons) | Montserrat semibold (or bold), active: Ink 900, inactive: Ink 700 | active: no fill, inactive: Ink 300 |
+
 ### Tags
 
 Tags are for marking components with their respective types. For example, in a project card, the tag provides visual que on the project status. The specification is as follows:
