@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:nz/ui/core/nz_button/nz_button_model.dart';
 import 'package:nz/ui/core/nz_layout/nz_layout.dart';
 import 'package:nz/ui/core/nz_typography/nz_label.dart';
 import 'package:nz/ui/core/nz_typography/nz_text.dart';
@@ -25,6 +26,7 @@ class StagingApp extends StatelessWidget {
                   crossAxisAlignment: CrossAxisAlignment.start,
                   spacing: 14,
                   children: [
+                    NzButtonModel.generate(context, 'text'),
                     NzLabel(
                       labelText: 'Testing',
                       fontColor: theme.ink.colour900!,
