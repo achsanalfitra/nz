@@ -173,6 +173,24 @@ Text buttons are clickable texts. The analog of this in newspaper would be the b
 | :----  | :---- | :---- | :---- |
 | Text | Equal padding with 4 px (taking less space than actual buttons) | Montserrat semibold (or bold), active: Ink 900, inactive: Ink 700 | active: no fill, inactive: Ink 300 |
 
+#### Icon buttons
+
+The main type of icon buttons is similar to [text buttons](####Textbuttons). The border is the only difference, where icon buttons are round.
+
+Other than the main icon type, there are special types:
+
+* nav buttons: for navigation; it is included in navbar.
+* magic button: the Nirzero magic button, placed on the bottom-right side of the screen in mobile.
+
+Here's the table showing the specification of each button in light mode:
+
+| Button type | Padding | Icon | Colour |
+| :----  | :---- | :---- | :---- |
+| Icon main | Equal padding with 4 px (rounded) | Any, active: Ink 900, inactive: Ink 700  | active: no fill, inactive: Ink 300 |
+| Icon nav | Equal padding with 14 px (rounded) | Nav icons (such as, dashboard), selected: Ink 900, active: Ink 300 | selected: Accent 300, active: Accent 100 |
+| Icon magic | Equal padding with 14 px (rounded) | Nizero icon, or other magic icon substitutes, Background 100 | active: Accent 500, selected: Positive (Blue) 700, inactive: Ink 300 |
+
+
 ### Tags
 
 Tags are for marking components with their respective types. For example, in a project card, the tag provides visual que on the project status. The specification is as follows:
