@@ -7,7 +7,7 @@ class NzButtonModel {
   //   return Text('placeholder');
   // }
 
-  static NzButton generate(
+  static NzButton button(
     BuildContext context,
     String buttonName, {
     bool hasText = true,
@@ -35,11 +35,11 @@ class NzButtonModel {
         hasText: hasText,
         isActive: isActive,
         fontSize: fontSize,
-        fontWeight: fontWeight?? FontWeight.w500,
+        fontWeight: fontWeight ?? FontWeight.w500,
         buttonText: buttonText,
-        padding: padding?? 10,
+        padding: padding ?? 10,
         borderWidth: borderWidth,
-        borderRadius: borderRadius?? 10,
+        borderRadius: borderRadius ?? 10,
         leftChildren: leftChildren,
         rightChildren: leftChildren,
         onTap: onTap,
@@ -56,11 +56,11 @@ class NzButtonModel {
         hasText: hasText,
         isActive: isActive,
         fontSize: fontSize,
-      fontWeight: fontWeight?? FontWeight.w500,
+        fontWeight: fontWeight ?? FontWeight.w500,
         buttonText: buttonText,
-        padding: padding?? 10,
+        padding: padding ?? 10,
         borderWidth: borderWidth,
-        borderRadius: borderRadius?? 10,
+        borderRadius: borderRadius ?? 10,
         leftChildren: leftChildren,
         rightChildren: leftChildren,
         onTap: onTap,
@@ -77,16 +77,56 @@ class NzButtonModel {
         hasText: hasText,
         isActive: isActive,
         fontSize: fontSize,
-      fontWeight: fontWeight?? FontWeight.w500,
+        fontWeight: fontWeight ?? FontWeight.w500,
         buttonText: buttonText,
-        padding: padding?? 10,
+        padding: padding ?? 10,
         borderWidth: borderWidth,
-        borderRadius: borderRadius?? 10,
+        borderRadius: borderRadius ?? 10,
         leftChildren: leftChildren,
         rightChildren: leftChildren,
         onTap: onTap,
       );
-    } else if (buttonName == 'text') {
+    } else {
+      return NzButton(
+        background: theme.positive.colour700!,
+        borderColour: theme.positive.colour700!,
+        fontColor: theme.background.colour100!,
+        inactiveBackground: theme.positive.colour500!,
+        inactiveBorderColour: theme.positive.colour500!,
+        inactiveFontColor: theme.background.colour100!,
+        hasBorder: false,
+        hasText: hasText,
+        isActive: isActive,
+        fontSize: fontSize,
+        fontWeight: FontWeight.w500,
+        buttonText: "Oops, you're selecting the wrong button",
+        padding: padding ?? 10,
+        borderWidth: borderWidth,
+        borderRadius: borderRadius ?? 10,
+        leftChildren: leftChildren,
+        rightChildren: leftChildren,
+        onTap: onTap,
+      );
+    }
+  }
+
+  static NzButton textbutton(
+    BuildContext context,
+    String buttonName, {
+    bool hasText = true,
+    bool isActive = true,
+    double fontSize = 24,
+    FontWeight? fontWeight,
+    String buttonText = 'Button',
+    double? padding,
+    double borderWidth = 1,
+    double? borderRadius,
+    List<Widget>? leftChildren,
+    List<Widget>? rightChildren,
+    void Function()? onTap,
+  }) {
+    final theme = context.theme();
+    if (buttonName == 'text') {
       return NzButton(
         background: const Color.fromARGB(0, 255, 255, 255),
         borderColour: const Color.fromARGB(0, 255, 255, 255),
@@ -121,9 +161,9 @@ class NzButtonModel {
         fontSize: fontSize,
         fontWeight: FontWeight.w500,
         buttonText: "Oops, you're selecting the wrong button",
-        padding: padding?? 10,
+        padding: padding ?? 10,
         borderWidth: borderWidth,
-        borderRadius: borderRadius?? 10,
+        borderRadius: borderRadius ?? 10,
         leftChildren: leftChildren,
         rightChildren: leftChildren,
         onTap: onTap,
