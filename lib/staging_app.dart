@@ -1,11 +1,12 @@
 import 'package:flutter/material.dart';
-import 'package:nz/ui/core/nz_button/nz_button_model.dart';
+// import 'package:nz/ui/core/nz_button/nz_button_model.dart';
+import 'package:nz/ui/core/nz_dialog/nz_popup.dart';
 import 'package:nz/ui/core/nz_layout/nz_layout.dart';
-import 'package:nz/ui/core/nz_typography/nz_label.dart';
-import 'package:nz/ui/core/nz_typography/nz_text.dart';
+// import 'package:nz/ui/core/nz_typography/nz_label.dart';
+// import 'package:nz/ui/core/nz_typography/nz_text.dart';
 // import 'package:nz/ui/core/nz_typography/nz_title.dart';
 import 'package:nz/ui/theme/nz_theme_provider.dart';
-import 'package:nz/ui/theme/nz_theme.dart';
+// import 'package:nz/ui/theme/nz_theme.dart';
 
 class StagingApp extends StatelessWidget {
   const StagingApp({super.key});
@@ -18,29 +19,14 @@ class StagingApp extends StatelessWidget {
       child: MaterialApp(
         home: Builder(
           builder: (context) {
-            final theme = context.theme();
+            // final theme = context.theme();
             return Scaffold(
               body: NzLayout(
                 child: Column(
                   mainAxisAlignment: MainAxisAlignment.start,
                   crossAxisAlignment: CrossAxisAlignment.start,
                   spacing: 14,
-                  children: [
-                    NzButtonModel.generate(context, 'text'),
-                    NzLabel(
-                      labelText: 'Testing',
-                      fontColor: theme.ink.colour900!,
-                    ),
-                    NzLabel(
-                      labelText: 'Testing',
-                      fontColor: theme.ink.colour900!,
-                    ),
-                    NzText(
-                      paragraphText: 'Testing',
-                      fontColor: theme.ink.colour900!,
-                      fontSize: 24,
-                    ),
-                  ],
+                  children: [NzPopup()],
                 ),
               ),
             );
