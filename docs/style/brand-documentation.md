@@ -229,4 +229,10 @@ Form field:
 * Border: very thin, 1 px for default matching the text width, coloured the same as placeholder text.
 * Layout: for fields that require actions, there is an indicator icon that should be on the rightmost of the field. It is separated with the rest of the field by a pipe symbol to the left, which is spaced at least 12 px.
 
+### Dialogs
+
+Dialogs are built similarly to buttons. It generally uses buttons' colour, such as Blue 700, Gold 700, or Background 100. Despite having almost all button characteristics, modals differ in their implementations.
+
+#### Pop-up menu
+This dialog is a list that opens when a button click happens, when clicking a dropdown or toggle for example. The pop-up menu should generally wrap the longest words on the menu list. Therefore, it is advised that the menu chooses words that have similar length. When there is a menu that exceeds the reasonable average of the word length, it is substituted with " ... ." Each item in the this dialog type should be assumed as invisible buttons, and they have atleast 10 px hitbox with 2 px spacing between elements.
 
