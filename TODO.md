@@ -8,6 +8,12 @@ for 05/06/2025
 * Create screen components, starting from the splash screen, which includes:
     * Icon (import)
     * Buttons (already specified)
-    * Dropdown buttons
-    * Inline link
-    * The screen itself
+    * Dropdown buttons (buttons exist, dropdown modal is on the way)
+    * Inline link (later)
+    * The screen itself (deprecated)
+
+from 13/05/2025
+
+* Complete NzPopup parameterization
+* Build factory pattern for NzPopup
+* Build custom-type button for NzPopup
